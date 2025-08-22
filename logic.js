@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
     // Animate landing page using GSAP
-    gsap.from("#main", {
+    gsap.from("body", {
         opacity: 0,
         duration: 1,
         ease: "power2.out"
@@ -87,4 +87,5 @@ document.querySelector('#btn').addEventListener('click',function(){
     location.reload();
 
 });});
+
 
