@@ -1,13 +1,17 @@
+
+
+
+
 document.querySelector('#startgm').addEventListener('click',function(){
 let timer = 60;
 let randhit = 0;
 let score  = 0;
 const audioArray = ["music.mp3", "chili.mp3", "lkc.mp3", "bst.mp3", 'wb.mp3', "challo.mp3", "3RD.mp3", "bande.mp3", "music.mp3", "chili.mp3", "lkc.mp3", "bst.mp3", 'wb.mp3', "challo.mp3","3RD.mp3", "bande.mp3"];
-alert('If You Get RCB Anthem You Are Very Lucky');
+alert('Ask Atharv About The Rules!');
 function playRandomAudio() {
   const audioIndex = Math.floor(Math.random() * audioArray.length);
   const audio = new Audio(audioArray[audioIndex]);
-  audio.play();
+  //audio.play();
 }
 
 function bubble(){let culla=``;
@@ -59,4 +63,5 @@ document.querySelector('#dnbd').addEventListener("click",function(dets){
 
 document.querySelector('#btn').addEventListener('click',function(){
     location.reload();
+
 });});
