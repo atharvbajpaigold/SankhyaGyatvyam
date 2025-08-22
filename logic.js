@@ -1,6 +1,28 @@
+window.addEventListener("DOMContentLoaded", () => {
+    // Animate landing page using GSAP
+    gsap.from("#main", {
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out"
+    });
 
+    gsap.from("#upbd .elem", {
+        y: -50,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "back.out(1.7)"
+    });
 
-
+    gsap.from("#btns button", {
+        scale: 0,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.3,
+        ease: "back.out(1.7)",
+        delay: 0.8
+    });
+});
 
 document.querySelector('#startgm').addEventListener('click',function(){
 let timer = 60;
@@ -65,3 +87,4 @@ document.querySelector('#btn').addEventListener('click',function(){
     location.reload();
 
 });});
+
