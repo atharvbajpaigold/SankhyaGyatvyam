@@ -107,5 +107,30 @@ body{
 }
 
 
+#btns {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10;
+}
+
+#btn, #startgm {
+    background-color: rgb(33, 85, 255);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover, #startgm:hover {
+    background-color: rgb(20, 40, 104);
+}
 
 
